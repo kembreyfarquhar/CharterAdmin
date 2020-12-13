@@ -1,0 +1,12 @@
+{
+  "name": "charter-admin-api",
+  "version": "1.0.0",
+  "description": "this api serves customer statistics to admin users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kembreyfarquhar",
+  "license": "ISC"
+}

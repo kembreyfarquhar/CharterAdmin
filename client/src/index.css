@@ -35,3 +35,7 @@ div#root {
   height: 100%;
   width: 100%;
 }
+
+.dashboard {
+  font-family: "Lato";
+}

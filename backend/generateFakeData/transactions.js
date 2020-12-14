@@ -52,7 +52,6 @@ const transactions = [
   { customer_id: 4, date: "2020-11-26T08:42:38.100Z", total: 395.47 },
   { customer_id: 4, date: "2020-09-02T22:04:21.724Z", total: 257.38 },
   { customer_id: 4, date: "2020-11-13T22:18:03.791Z", total: 223.02 },
-  { customer_id: 4, date: "2020-09-01T04:10:34.879Z", total: 283.73 },
   { customer_id: 4, date: "2020-09-03T17:33:15.016Z", total: 36.85 },
   { customer_id: 4, date: "2020-11-03T21:50:55.701Z", total: 411.26 },
   { customer_id: 5, date: "2020-09-11T09:34:35.140Z", total: 410.18 },

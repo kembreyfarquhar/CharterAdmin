@@ -23,12 +23,23 @@
   src: local("Lato-Black"), url(./fonts/Lato-Black.ttf) format("truetype");
 }
 
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: "Lato";
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body,
 div#root {
   height: 100%;
   width: 100%;
-  margin: 0;
 }
 
 .full-size {
@@ -36,6 +47,6 @@ div#root {
   width: 100%;
 }
 
-.dashboard {
-  font-family: "Lato";
+.link:hover {
+  cursor: pointer;
 }

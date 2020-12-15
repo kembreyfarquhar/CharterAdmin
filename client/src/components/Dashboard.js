@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Tab, TabList, Tabs, TabPanel } from "react-tabs";
-import DataTable from "react-data-table-component";
-import DataTableExtensions from "react-data-table-component-extensions";
-import "react-data-table-component-extensions/dist/index.css";
 import "react-tabs/style/react-tabs.css";
 
+import AllTransactionsReport from "./AllTransactionsReport";
 import MonthlyReport from "./MonthlyReport";
 import CustomerRewards from "./CustomerRewards";
 
@@ -34,15 +32,10 @@ const columns = [
 
 const Dashboard = () => {
   const [report, setReport] = useState(null);
-  const [tableData, setTableData] = useState();
 
   useEffect(() => {
     getQuarterlyReport();
   }, []);
-
-  useEffect(() => {
-    if (report) setTableData({ columns, data: report });
-  }, [report]);
 
   const formatDate = (dt) => {
     const options = { year: "numeric", month: "numeric", day: "numeric" };
@@ -103,9 +96,7 @@ const Dashboard = () => {
           </TabList>
 
           <TabPanel>
-            <DataTableExtensions {...tableData}>
-              <DataTable columns={columns} data={report} noHeader pagination />
-            </DataTableExtensions>
+            <AllTransactionsReport data={report} columns={columns} />
           </TabPanel>
           <TabPanel>
             <MonthlyReport data={getMonthlyReport(11)} columns={columns} />

@@ -1,5 +1,10 @@
+// Routing
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Context Provider
 import { ViewportProvider } from "./context/viewport";
+
+// Components
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 

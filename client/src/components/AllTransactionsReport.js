@@ -5,13 +5,12 @@ import DataTableExtensions from "react-data-table-component-extensions";
 // Styling
 import "react-data-table-component-extensions/dist/index.css";
 
-// EXPORTED MONTHLYREPORT COMPONENT
-const MonthlyReport = ({ columns, data }) => {
+// EXPORTED ALLTRANSACTIONSREPORT COMPONENT
+const AllTransactionsReport = ({ columns, data }) => {
   const tableData = {
     columns,
     data,
   };
-
   return (
     <DataTableExtensions {...tableData}>
       <DataTable columns={columns} data={data} noHeader pagination />
@@ -19,4 +18,4 @@ const MonthlyReport = ({ columns, data }) => {
   );
 };
 
-export default MonthlyReport;
+export default AllTransactionsReport;

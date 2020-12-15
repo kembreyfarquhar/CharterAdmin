@@ -1,20 +1,25 @@
+// Hooks
 import { useState, useEffect } from "react";
+
+// Styling
 import StyleGuide from "../theme/StyleGuide";
 
+// Button Text Style
 const labelStyle = {
   color: StyleGuide.colors.neutral.white,
   textAlign: "center",
   ...StyleGuide.typeography.buttonText,
 };
 
+// Shadow Styles
 const mediumShadow =
   "0px 2px 4px rgba(0, 0, 0, 0.15), 2px 0px 4px rgba(0, 0, 0, 0.1)";
-
 const smallShadow =
   "0px 1px 4px rgba(0, 0, 0, 0.15), 2px 0px 4px rgba(0, 0, 0, 0.1)";
 
 const borderRadius = "4px";
 
+// Button Size Styles
 const sizes = {
   small: {
     width: "60px",
@@ -33,13 +38,13 @@ const sizes = {
   },
 };
 
+// Button Color Maps for States
 const primaryColors = {
   rest: StyleGuide.colors.brand[150],
   hover: StyleGuide.colors.brand[200],
   active: StyleGuide.colors.brand[250],
   focus: StyleGuide.colors.brand[150],
 };
-
 const secondaryColors = {
   rest: StyleGuide.colors.teal[200],
   hover: StyleGuide.colors.teal[250],
@@ -47,6 +52,7 @@ const secondaryColors = {
   focus: StyleGuide.colors.teal[200],
 };
 
+// Button State Types
 const stateTypes = {
   rest: "rest",
   hover: "hover",
@@ -54,6 +60,7 @@ const stateTypes = {
   focus: "focus",
 };
 
+// EXPORTED BUTTON COMPONENT
 const Button = ({ label, type, size, onClick }) => {
   const [state, setState] = useState(stateTypes.rest);
   const [buttonStyle, setButtonStyle] = useState();

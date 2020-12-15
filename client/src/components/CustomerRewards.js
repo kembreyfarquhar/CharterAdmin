@@ -1,8 +1,14 @@
+// Hooks
 import { useEffect, useState } from "react";
+
+// Library Components
 import DataTable from "react-data-table-component";
 import DataTableExtensions from "react-data-table-component-extensions";
+
+// Styling
 import "react-data-table-component-extensions/dist/index.css";
 
+// Data Table Columns
 const columns = [
   {
     name: "Customer",
@@ -12,17 +18,17 @@ const columns = [
   {
     name: "November",
     selector: "11",
-    sortable: true,
+    sortable: false,
   },
   {
     name: "October",
     selector: "10",
-    sortable: true,
+    sortable: false,
   },
   {
     name: "September",
     selector: "9",
-    sortable: true,
+    sortable: false,
   },
   {
     name: "Total",
@@ -31,16 +37,18 @@ const columns = [
   },
 ];
 
-const MonthlyReport = ({ report }) => {
+// EXPORTED CUSTOMERREWARDS COMPONENT
+const CustomerRewards = ({ report }) => {
   const [tableData, setTableData] = useState();
 
+  // Sets tableData, checking that report is not null or undefined
   useEffect(() => {
     if (report) {
       setTableData({ columns, data: getCustomerRewards(report) });
     }
-    console.log(getCustomerRewards(report));
   }, [report]);
 
+  // Function to calculate monthly and quarterly rewards per customer
   function getCustomerRewards(report) {
     return report.reduce((acc, curr) => {
       const found = acc.find((a) => a.full_name === curr.full_name);
@@ -71,4 +79,4 @@ const MonthlyReport = ({ report }) => {
   );
 };
 
-export default MonthlyReport;
+export default CustomerRewards;

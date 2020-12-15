@@ -58,6 +58,12 @@ export default {
       150: "#40D5CB",
       100: "#DFF8F6",
     },
+    red: {
+      250: "#640007",
+      200: "#95000B",
+      150: "#C7000F",
+      100: "#F8DFE1",
+    },
     neutral: {
       white: "#FFFFFF",
       100: "#F5F5F5",

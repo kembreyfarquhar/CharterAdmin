@@ -2,6 +2,10 @@
 
 🦄 [Figma Design File](https://www.figma.com/file/TYcs0pC0iJRUsfGJl6MP2I/Charter-Rewards?node-id=0%3A1)
 
+[Deployed Frontend](https://charteradmin.netlify.app/)
+
+[Deployed Backend](https://charter-admin.herokuapp.com)
+
 _An app to view crucial business information, statistics, and trends regarding your customer base, inventory items, and sales._
 
 ---

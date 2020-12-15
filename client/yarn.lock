@@ -9060,6 +9060,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-content-loader@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-5.1.4.tgz#854bafe4415dd9de07174621375bc308edd0ebb5"
+  integrity sha512-hTq7pZi2GKCK6a9d3u6XStozm0QGCEjw8cSqQReiWnh2up6IwCha5R5TF0o6SY5qUDpByloEZEZtnFxpJyENFw==
+
 react-data-table-component-extensions@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/react-data-table-component-extensions/-/react-data-table-component-extensions-1.5.1.tgz#18b92734ad8d62813649a6292e68556aec3cdf03"

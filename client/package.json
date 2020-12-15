@@ -9,6 +9,7 @@
     "axios": "^0.21.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
+    "react-content-loader": "^5.1.4",
     "react-data-table-component": "^6.11.6",
     "react-data-table-component-extensions": "^1.5.1",
     "react-dom": "^17.0.1",

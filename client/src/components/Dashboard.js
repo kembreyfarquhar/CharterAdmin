@@ -12,6 +12,7 @@ import "react-tabs/style/react-tabs.css";
 import AllTransactionsReport from "./AllTransactionsReport";
 import MonthlyReport from "./MonthlyReport";
 import CustomerRewards from "./CustomerRewards";
+import DataTableLoader from "./DataTableLoader";
 
 // Table Columns for All & Monthly
 const columns = [
@@ -118,7 +119,11 @@ const Dashboard = () => {
     }, 0);
 
   if (!report) {
-    return <h1>Loading...</h1>;
+    return (
+      <div style={{ paddingTop: "70px" }}>
+        <DataTableLoader />
+      </div>
+    );
   } else {
     return (
       <div style={{ paddingTop: "10px", paddingBottom: "80px" }}>

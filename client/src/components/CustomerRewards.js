@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import DataTableExtensions from "react-data-table-component-extensions";
 
+// Custom Components
+import Card from "../customComponents/Card";
+
 // Styling
 import "react-data-table-component-extensions/dist/index.css";
 
@@ -73,9 +76,16 @@ const CustomerRewards = ({ report }) => {
 
   if (!tableData) return null;
   return (
-    <DataTableExtensions {...tableData}>
-      <DataTable columns={columns} data={tableData.data} noHeader pagination />
-    </DataTableExtensions>
+    <Card header="Quarterly Customer Rewards">
+      <DataTableExtensions {...tableData}>
+        <DataTable
+          columns={columns}
+          data={tableData.data}
+          noHeader
+          pagination
+        />
+      </DataTableExtensions>
+    </Card>
   );
 };
 

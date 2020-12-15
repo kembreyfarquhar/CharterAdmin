@@ -16,7 +16,7 @@ server.use("/reports", reportsRouter);
 
 server.get("/", (_req, res) => {
   res.send(
-    '<h1>Welcome to the CharterAdmin API!</h1><h3>For documentation <a href="https://github.com/kembreyfarquhar/CharterAdmin/tree/main/backend">click here</a>.</h3><p>This API was made by <a href="https://github.com/kembreyfarquhar">Katie Embrey-Farquhar</a> with ❤️</p>'
+    '<h1>Welcome to the CharterAdmin API!</h1><h3>For documentation <a href="https://github.com/kembreyfarquhar/CharterAdmin/tree/main/backend/README.md">click here</a>.</h3><p>This API was made by <a href="https://github.com/kembreyfarquhar">Katie Embrey-Farquhar</a> with ❤️</p>'
   );
 });
 
